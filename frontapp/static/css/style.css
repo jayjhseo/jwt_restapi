@@ -1,0 +1,211 @@
+/* 메인 비주얼 영역 */
+.main-visual-area .swiper-box .swiper .swiper-slide {
+    border-radius: 12px;
+    overflow: hidden;
+}
+.main-visual-area .swiper-box .swiper .swiper-pagination {
+    bottom: 12px !important;
+}
+.main-visual-area .swiper-box .swiper .swiper-pagination .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important; 
+    background: rgba(265,265,265,0.6) !important;
+    opacity: 1 !important;
+    margin: 0 6px !important;
+    border-radius: 50% !important;
+}
+.main-visual-area .swiper-box .swiper .swiper-pagination .swiper-pagination-bullet-active {
+    width: 36px !important;
+    background: rgba(265,265,265,1) !important;
+    border-radius: 999px !important;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* 로그인 영역 */
+.login-area .add-menu-box .line {
+    width: 1px;
+    height: 12px;
+    background: #E0E0E0;
+}
+.login-area .sns-login-box > h3::before,
+.login-area .sns-login-box > h3::after {
+    content: "";
+    display: block;
+    width: 156px;
+    height: 1px;
+    background: #ccc;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.login-area .sns-login-box > h3::before {
+    left: 0;
+}
+.login-area .sns-login-box > h3::after {
+    right: 0;
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* 상품 상세 영역 */
+.product-detail-area .product-infor-box-1 .product-detail-swiper-box {
+    width: calc(50% - 20px);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.product-detail-area .product-infor-box-1 .product-detail-swiper-box .swiper-slide > .img-box {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 100%;
+}
+.product-detail-area .product-infor-box-1 .product-detail-swiper-box .swiper-slide > .img-box > img {
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.product-detail-area .product-infor-box-1 .product-detail-swiper-box .swiper-pagination {
+    bottom: 12px !important;
+}
+.product-detail-area .product-infor-box-1 .product-detail-swiper-box .swiper-pagination .swiper-pagination-bullet {
+    width: 12px !important;
+    height: 12px !important;
+    background: rgba(265,265,265,0.6) !important;
+    opacity: 1 !important;
+    margin: 0 6px !important;
+    border-radius: 50% !important;
+}
+.product-detail-area .product-infor-box-1 .product-detail-swiper-box .swiper-pagination .swiper-pagination-bullet-active {
+    width: 36px !important;
+    background: rgba(265,265,265,1) !important;
+    border-radius: 999px !important;
+}
+.product-detail-area .product-infor-box-1 .product-text-box {
+    width: calc(50% - 20px);
+}
+
+/* ------------------------------------------------------------------------------- */
+
+/* 채팅 영역 */
+.chat-area .chat-box {
+    min-height: calc(100vh - 430px);
+    box-sizing: border-box;
+    border: 1px solid #dbdbdb;
+}
+.chat-area .chat-box .chat-list-box {
+    width:200px;
+    height:calc(100vh - 430px);
+    box-sizing: border-box;
+    border-right: 1px solid #dbdbdb;
+    overflow: auto;
+}
+.chat-area .chat-box .chat-list-box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-area .chat-box .chat-list-box::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #999;
+}
+.chat-area .chat-box .chat-list-box::-webkit-scrollbar-track {
+    background: transparent;
+}
+.chat-area .chat-box .chat-list-box > li > a {
+    box-sizing: border-box;
+    padding: 12px;
+}
+.chat-area .chat-box .chat-list-box > li > a.active {
+    background: #eee;
+}
+.chat-area .chat-box .chat-list-box > li > a:hover {
+    background: #eee;
+}
+.chat-area .chat-box .chat-list-box > li:not(:first-child) > a {
+    border-top: 1px solid #dbdbdb;
+}
+.chat-area .chat-box .chat-list-box > li > a > p {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+.chat-area .chat-box .chat-detail-area {
+    width:calc(100% - 200px);
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box {
+    width: 100%;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li {
+    width: 100%;
+    height:calc(100vh - 497px);
+    overflow: auto;
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    box-sizing: border-box;
+    padding: 12px;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li::-webkit-scrollbar {
+    width: 6px;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li::-webkit-scrollbar-thumb {
+    border-radius: 999px;
+    background: #999;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li::-webkit-scrollbar-track {
+    background: transparent;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li .speech-bubble-box {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 12px;
+    background: skyblue;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li .speech-bubble-box.type-1 {
+    margin: 0 0 0 auto;
+    background: #EFF3F6;
+    color: #555;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li .speech-bubble-box.type-2 {
+    margin: 0 auto 0 0;
+    background: #E5F0FF;
+    color: #555;
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li .speech-bubble-box.type-1 .date {
+    bottom: 0;
+    right: calc(100% + 6px);
+}
+.chat-area .chat-box .chat-detail-area .chat-detail-box > li .speech-bubble-box.type-2 .date {
+    bottom: 0;
+    left: calc(100% + 6px);
+}
+
+.chat-area .chat-box .chat-detail-area .input-area {
+    box-sizing: border-box;
+    padding: 12px;
+    border-top: 1px solid #dbdbdb;
+    display: none;
+}
+.chat-area .chat-box .chat-detail-area .input-area .chat-btn {
+    width: 80px;
+    height: 42px;
+    box-sizing: border-box;
+    font-size: 14px;
+    border-radius: 4px;
+    border: none;
+    color: #fff;
+    background: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: inherit;
+}
+.chat-area .chat-box .chat-detail-area .input-area .chat-btn.active {
+    background: #005DE8;
+    cursor: pointer;
+}
